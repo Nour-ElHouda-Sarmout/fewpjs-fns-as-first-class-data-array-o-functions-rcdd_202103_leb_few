@@ -34,10 +34,10 @@ let routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog
 
 function exerciseDog(dogName, dogBreed){
   console.log("start");
-  let result;
+  var result;
   while (routine.length){
       result += routine.shift().call(this,dogName, dogBreed);
    }
-   console.log(result.slice(1));
-   return result.slice(1);
+   console.log(result);
+   return result;
 }
