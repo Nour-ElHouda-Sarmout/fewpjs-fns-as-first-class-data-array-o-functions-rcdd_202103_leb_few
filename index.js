@@ -36,8 +36,8 @@ function exerciseDog(dogName, dogBreed){
   console.log("start");
   let result;
   while (routine.length){
-      result = routine.shift().call(this,dogName, dogBreed);
+      result += routine.shift().call(this,dogName, dogBreed);
    }
-   console.log(result);
-   return result;
+   console.log(result.slice(1));
+   return result.slice(1);
 }
