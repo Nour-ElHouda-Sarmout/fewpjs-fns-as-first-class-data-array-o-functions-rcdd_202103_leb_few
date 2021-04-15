@@ -39,6 +39,7 @@ function exerciseDog(dogName, dogBreed){
   while (routine.length){
     if(first === 0){
         result = routine.shift().call(this,dogName, dogBreed);
+        first = 1;
     }else{
         result += routine.shift().call(this,dogName, dogBreed);
     }
